@@ -6,20 +6,19 @@ import java.util.Arrays;
    Рапечатать его
    Перевернуть, не создавая новый массив
    Снова распечатать*/
-
 public class Task3 {
     public static void main(String[] args) {//создаем главный метод
         int[] array = new int[10];//создаем новый массив с количеством элементов: 10
-        getRandomArray(array);//создаем метод для создания рандомного массива
+        Task1.getRandomArray(array)/* ответ на вопрос*/;//создаем метод для создания рандомного массива
         getReversedArray(array);//создаем метод для переворачивания массива
     }
 
-    private static void getRandomArray(int[] arr) {
-        int size = arr.length;//находим длину массива (хранится в переменной size)
-        for (int i = 0; i < size; i++) {//создаем цикл до длины массива
-            arr[i] = (int) (Math.random() * 100);//заполняем каждый элемент массива рандомным числом до 100 (написано в формуле - *100)
-        }
-    }
+//    private static void getRandomArray(int[] arr) {
+//        int size = arr.length;//находим длину массива (хранится в переменной size)
+//        for (int i = 0; i < size; i++) {//создаем цикл до длины массива
+//            arr[i] = (int) (Math.random() * 100);//заполняем каждый элемент массива рандомным числом до 100 (написано в формуле - *100)
+//        }
+//    }
 
     private static void getReversedArray(int[] array) {
         System.out.println("Your basic array: " + Arrays.toString(array));//печатаем первоначальный массив
